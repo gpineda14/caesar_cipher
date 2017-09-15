@@ -1,6 +1,6 @@
-require './caesar_cipher.rb'
+require './caesar_cipher'
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 
 get '/' do
   erb :form
